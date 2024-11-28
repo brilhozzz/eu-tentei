@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+
+<head class="cabeca">
+    <meta charset="utf-8" />
+    <title>StardewWeb.login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="brilho.css">
+    <style>
+        .background {
+            background-size: cover;
+            background-image: url(img/fundoC.png);
+        }
+    </style>
+</head>
+
+<body class="background conteiner-fluid row">
+    <header  class="col-12"  >
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline  mx-auto text-center">
+              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+          <a href="login.html"> <img whidth="100" height="50" src="img/avatar.png">
+                </a>
+    </header>
+
+    <main class="main container mt-5 d-flex justify-content-center">
+        <div class="w-100" style="max-width: 600px;">
+            <a href="index.html" class="d-block text-center">
+                <img width="100" height="70" src="https://stardewvalleywiki.com/mediawiki/images/6/68/Main_Logo.png" alt="Logo Stardew">
+            </a>
+            <form action="Main_Logo.png" method="post" class="mt-4">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="form-control" required pattern="[aA-zZ\s]+$" autofocus>
+                </div>
+
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" id="senha" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email:</label>
+                    <input type="email" name="Email" id="Email" class="form-control" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="Estado" class="form-label">Estado:</label>
+                    <select id="Estado" name="Estado" class="form-select">
+                        <optgroup label="Região Sul">
+                            <option value="">----escolha----</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="text-center py-3">
+        <p>StardewWeb/RS - by Victor Hugo.</p>
+    </footer>
+</body>
+
+</html>
